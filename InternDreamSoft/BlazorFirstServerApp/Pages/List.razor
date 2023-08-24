@@ -1,0 +1,85 @@
+﻿@page "/"
+@using AntDesign;
+@using BlazorFirstServerApp.Model.DTO;
+
+@inject IStudentRepository studentRepository
+@inject IMessageService message
+
+<h1>List Student</h1>
+<GridRow>
+    <GridCol Span="8">
+        <PopUpStudentComponent @ref="PopUpStudentComponent" Clear="Clear"></PopUpStudentComponent>
+    </GridCol>
+    <GridCol Span="4" Offset="12">
+    </GridCol>
+</GridRow>
+<br />
+<br />
+<div>
+    <EditForm Model="@studentSearch"
+              OnValidSubmit="@OnFinishSearchAsync"
+              OnInvalidSubmit="@OnFinishFailedSearch"
+          @ref="_formSearchList">
+        <div class="row">
+            <div class="form-group col-md-2">
+                <label for="name">Name</label>
+                <Input @bind-Value="@studentSearch.Name" id="name" />
+            </div>
+            <div class="form-group col-md-2">
+                <label for="address">Address</label>
+                <Input @bind-Value="@studentSearch.Address" id="address" />
+            </div>
+            <div class="form-group col-md-2">
+                <label for="date1">Start Date</label>
+                <DatePicker @bind-Value="@studentSearch.StartDate" id="date1" Format="dd/MM/yyyy" />
+            </div>
+            <div class="form-group col-md-2">
+                <label for="date2">End Date</label>
+                <DatePicker @bind-Value="@studentSearch.EndDate" id="date2" Format="dd/MM/yyyy" />
+            </div>
+            <div class="form-group col-md-2">
+                <label for="form-select">Class</label>
+                <InputSelect @bind-Value="@studentSearch.ClassID" class="form-select">
+                    <option value="-1">All Class</option>
+                    @foreach (var c in classes)
+                    {
+                        <option value="@c.Id">@c.Name</option>
+                    }
+                </InputSelect>
+            </div>
+            <div class="form-group col-md-2 d-flex justify-content-center align-items-center">
+                <Button HtmlType="submit" Style="margin-top: 24px;">Search</Button>
+            </div>
+        </div>
+        <br />
+        
+    </EditForm>
+</div>
+<br />
+<br />
+<Table @ref="table" TItem="StudentViewDTO" Total="total" DataSource="@studentViews"
+    @bind-PageIndex="pageNumber" @bind-PageSize="pageSize"
+    OnChange="OnPaging">
+    <Column @bind-Field="context.Stt" ></Column>
+    <Column @bind-Field="context.Name"></Column>
+    <Column @bind-Field="context.Dob"></Column>
+    <Column @bind-Field="context.Address"></Column>
+    <Column @bind-Field="context.ClassName"></Column>
+    <ActionColumn Title="Action">
+        <Space Size=@("middle")>
+            <SpaceItem>
+                
+                <Button OnClick="() => UpdateStudent(context)"><Icon Type="edit" Theme="outline" /></Button>
+            </SpaceItem>
+            <SpaceItem>
+                <Popconfirm Title="Sure to delete?"
+                            OnConfirm="() => DeleteStudent(context)"
+                            OkText="Yes"
+                            CancelText="No">
+                    <Button><Icon Type="delete" Theme="outline" /></Button>
+                </Popconfirm>
+            </SpaceItem>
+        </Space>
+    </ActionColumn>
+</Table>
+

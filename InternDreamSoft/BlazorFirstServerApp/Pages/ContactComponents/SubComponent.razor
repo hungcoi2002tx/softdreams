@@ -1,0 +1,19 @@
+﻿<h3>SubComponent</h3>
+<h1>@Name</h1>
+@if (ShowAge)
+{
+    <h2>@Age</h2>
+}
+
+<input />
+<button onclick="@(() => {ShowAge = !ShowAge ;})">Show Age</button>
+@code {
+    [Parameter]
+    public string Name{ get; set; }
+
+    [Parameter]
+    public int Age{ get; set; }
+
+    [Parameter]
+    public bool ShowAge{ get; set; }
+}

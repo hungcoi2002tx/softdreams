@@ -1,0 +1,54 @@
+﻿@page "/statitics"
+@inject IClassRepository classRepository
+@inject IStudentRepository studentRepository
+
+<GridRow>
+    <GridCol Span="6" Offset="12">
+        <Button style="float: right" OnClick="ShowModal"><Icon Type="filter" Theme="outline" /></Button>
+    </GridCol>
+    
+</GridRow>
+
+<Modal Title="@("Seach")"
+       Visible="@_visible"
+       OnOk="@HandleOk"
+       OnCancel="@HandleCancel">
+    <Form Loading="loading" Model="@filterModel"
+          LabelColSpan="8"
+          WrapperColSpan="16"
+          OnFinish="OnFinish"
+          OnFinishFailed="OnFinishFailed"
+          @ref="@_formFilter">
+        <FormItem Label="Month">
+            <InputSelect @bind-Value="@filterModel.Month" class="form-select">
+                <option value="-1">All Month</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </InputSelect>
+        </FormItem>
+    </Form>
+</Modal>
+
+
+<AntDesign.Charts.Pie @ref="Chart" Data="listChart" Config="config1"/>
+@*<AntDesign.Charts.Pie @ref="Chart" Data="listChart" Config="config1" />*@
+
+
+
+
+<div class="router-pagging-table">
+    <Table DataSource="@listChart">
+        <PropertyColumn Property="c=>c.Count" />
+        <PropertyColumn Property="c=>c.Name" />
+    </Table>
+</div>

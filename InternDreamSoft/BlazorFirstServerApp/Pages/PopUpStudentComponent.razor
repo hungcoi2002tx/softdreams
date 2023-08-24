@@ -1,0 +1,64 @@
+﻿@using AntDesign;
+@using BlazorFirstServerApp.Model.DTO;
+
+@inject IStudentRepository studentRepository
+@inject IClassRepository classRepository
+@inject IMessageService _message
+
+    <Button Icon="plus" Type="primary" @onclick="_=>open()">New account</Button>
+    <Drawer Closable="true" Width="520" Visible="visible" Title='("Add new student")' OnClose="_=>close()">
+        <Template style="height:90%">
+            <EditForm @ref="editForm" OnValidSubmit="@Submit"
+                      OnInvalidSubmit="@SubmitFalse"
+                      Model="@studentDTO">
+                <DataAnnotationsValidator />
+            <div class="form-row">
+                <div class="col-md-12 mb-8">
+                    <div class="form-outline">
+                        <label class="form-label" for="name">Name</label>
+                        <InputText type="text" id="name" class="form-control" placeholder="Name"
+                                   @bind-Value="@studentDTO.Name" />
+                        <ValidationMessage For="@(() => studentDTO.Name)" />
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-12 mb-8">
+                    <div class="form-outline">
+                        <label class="form-label" >Address</label>
+                        <InputText type="text" id="address" class="form-control" placeholder="Address"
+                                   @bind-Value="@studentDTO.Address" />
+                        <ValidationMessage For="@(() => studentDTO.Address)" />
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-12 mb-8">
+                    <div class="form-outline">
+                        <label class="form-label" >Birthday</label>
+                        <br />
+                        <DatePicker @bind-Value="@studentDTO.Dob" Format="dd/MM/yyyy"/>
+                        <ValidationMessage For="@(() => studentDTO.Dob)" />
+                    </div>
+                </div>
+                <div class="col-md-12 mb-8">
+
+                <label class="form-label" for="class">Class</label>
+
+                <InputSelect @bind-Value="@studentDTO.ClassId" class="form-select" >
+                    @foreach (var c in classes)
+                    {
+                        <option value="@c.Id">@c.Name</option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="@(() => studentDTO.ClassId)" />
+
+            </div>
+            </div>
+            
+            <br />
+            <Button HtmlType="submit">Submit</Button>
+            <Button Type="default" OnClick="_=>close()">Cancel</Button>
+            </EditForm>
+            
+            
+        </Template>
+    </Drawer>
