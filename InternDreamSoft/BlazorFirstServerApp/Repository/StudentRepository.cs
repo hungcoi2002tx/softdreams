@@ -6,6 +6,7 @@ using NHibernate;
 using NHibernate.Linq;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,7 @@ namespace BlazorFirstServerApp
 
         public List<Student> GetAllStudents()
         {
-            using (var session = _session.OpenSession())
+            using (var session = _session.OpenStatelessSession())
             {
                 StudentSearch studentSearch = new StudentSearch();
                 var query = session.Query<Student>(); // Implement NHibernate query here
@@ -39,14 +40,13 @@ namespace BlazorFirstServerApp
         public void AddNewStudent(Student student)
         {
             student.Id = GetIDNewStudent();
-            using (var session = _session.OpenSession())
+            using (var session = _session.OpenStatelessSession())
             {
-                using (var transaction = session.BeginTransaction())
+                using (var transaction = session.BeginTransaction(IsolationLevel.Serializable))
                 {
                     try
-                    {
-                        
-                        session.Save(student);
+                    {                       
+                        session.Insert(student);
                         transaction.Commit();
                     }
                     catch (Exception ex)
@@ -69,7 +69,7 @@ namespace BlazorFirstServerApp
         {
             using (var session = _session.OpenSession())
             {
-                using (var transaction = session.BeginTransaction())
+                using (var transaction = session.BeginTransaction(IsolationLevel.Serializable))
                 {
                     try
                     {  
@@ -90,7 +90,7 @@ namespace BlazorFirstServerApp
         {
             using (var session = _session.OpenSession())
             {
-                using (var transaction = session.BeginTransaction())
+                using (var transaction = session.BeginTransaction(IsolationLevel.Serializable))
                 {
                     try
                     {
@@ -111,7 +111,7 @@ namespace BlazorFirstServerApp
 
         public List<Student> SortData()
         {
-            using (var session = _session.OpenSession())
+            using (var session = _session.OpenStatelessSession())
             {
                 return session.Query<Student>()
                     .Fetch(s => s.ClassStudent)
