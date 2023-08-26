@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[5.4.5, )"
             },
+            "Syncfusion.XlsIO.Net.Core": {
+              "target": "Package",
+              "version": "[22.2.10, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"

@@ -21,7 +21,6 @@ namespace BlazorFirstServerApp
         {
             _classRepository = classRepository;
             _session = session;
-
         }
 
         public List<Student> GetAllStudents()

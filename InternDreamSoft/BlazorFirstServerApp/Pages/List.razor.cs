@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.JSInterop;
 using System.Net.NetworkInformation;
 using System.Reflection;
 
@@ -108,5 +109,18 @@ namespace BlazorFirstServerApp.Pages
             studentSearch = new StudentSearch();
         }
 
+
+        MemoryStream excelStream;
+
+        /// <summary>
+        /// Create and download the Excel document.
+        /// </summary>
+        protected async void CreateDocument()
+        {
+            var students = studentRepository.GetAllStudents();
+            var studentViews = studentMapper.listStudentToListStudentViewDTO(students);
+            excelStream = excelService.CreateExcel(studentViews);
+            await JS.InvokeVoidAsync("saveAsFile", "data.xlsx", excelStream.ToArray());
+        }
     }
 }

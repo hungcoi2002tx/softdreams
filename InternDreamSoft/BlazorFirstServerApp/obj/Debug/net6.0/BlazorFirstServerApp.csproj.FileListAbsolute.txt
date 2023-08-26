@@ -60,3 +60,6 @@ E:\InternDreamSoft\BlazorFirstServerApp\bin\Debug\net6.0\AntDesign.dll
 E:\InternDreamSoft\BlazorFirstServerApp\bin\Debug\net6.0\Microsoft.AspNetCore.Components.DataAnnotations.Validation.dll
 E:\InternDreamSoft\BlazorFirstServerApp\bin\Debug\net6.0\OneOf.dll
 E:\InternDreamSoft\BlazorFirstServerApp\bin\Debug\net6.0\AntDesign.Charts.dll
+E:\InternDreamSoft\BlazorFirstServerApp\bin\Debug\net6.0\Syncfusion.Compression.Portable.dll
+E:\InternDreamSoft\BlazorFirstServerApp\bin\Debug\net6.0\Syncfusion.Licensing.dll
+E:\InternDreamSoft\BlazorFirstServerApp\bin\Debug\net6.0\Syncfusion.XlsIO.Portable.dll

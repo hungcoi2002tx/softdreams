@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mLSOaGJyH5Aw7HtVpfgY3CY13uFyPxGl7C1mD5dhSsxzC+karG/gV8RbYtMDw5JOEKYusqnbnsD9EU3UN3Dx8w==",
+  "dgSpecHash": "0q1bkyquF97piCJdBUPNfxbOA7Sdl3b20gO0L8YYHKtlEWofUjACbsIpgkPtFd8iNgRT6gcuWC+86Snu9esPtg==",
   "success": true,
   "projectFilePath": "E:\\InternDreamSoft\\BlazorFirstServerApp\\BlazorFirstServerApp.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,9 @@
     "C:\\Users\\Admin\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\syncfusion.compression.net.core\\22.2.10\\syncfusion.compression.net.core.22.2.10.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\syncfusion.licensing\\22.2.10\\syncfusion.licensing.22.2.10.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\syncfusion.xlsio.net.core\\22.2.10\\syncfusion.xlsio.net.core.22.2.10.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

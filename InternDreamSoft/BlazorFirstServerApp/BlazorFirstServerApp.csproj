@@ -12,6 +12,7 @@
     <PackageReference Include="FluentNHibernate" Version="3.2.1" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="NHibernate" Version="5.4.5" />
+    <PackageReference Include="Syncfusion.XlsIO.Net.Core" Version="22.2.10" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 

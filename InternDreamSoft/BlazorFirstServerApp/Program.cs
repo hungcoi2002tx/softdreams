@@ -1,5 +1,7 @@
 using BlazorFirstServerApp.Data;
 using BlazorFirstServerApp.Model.NewFolder;
+using BlazorFirstServerApp.Service;
+using BlazorFirstServerApp.Service.IStudent;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
@@ -19,7 +21,7 @@ namespace BlazorFirstServerApp
             builder.Services.AddRazorPages(); 
             builder.Services.AddAntDesign();
             builder.Services.AddServerSideBlazor();
-            builder.Services.AddSingleton<WeatherForecastService>();
+            builder.Services.AddSingleton<IExcelService, ExcelService>();
             
 
             var app = builder.Build();

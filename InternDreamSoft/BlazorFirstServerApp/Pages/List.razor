@@ -1,7 +1,10 @@
 ﻿@page "/"
 @using AntDesign;
 @using BlazorFirstServerApp.Model.DTO;
-
+@using System.IO;
+@using BlazorFirstServerApp.Service.IStudent;
+@inject Microsoft.JSInterop.IJSRuntime JS
+@inject IExcelService excelService
 @inject IStudentRepository studentRepository
 @inject IMessageService message
 
@@ -11,6 +14,7 @@
         <PopUpStudentComponent @ref="PopUpStudentComponent" Clear="Clear"></PopUpStudentComponent>
     </GridCol>
     <GridCol Span="4" Offset="12">
+        <button class="btn btn-primary" @onclick="@CreateDocument">Create Document</button>
     </GridCol>
 </GridRow>
 <br />

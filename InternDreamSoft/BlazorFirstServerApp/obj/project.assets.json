@@ -711,6 +711,45 @@
           }
         }
       },
+      "Syncfusion.Compression.Net.Core/22.2.10": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Syncfusion.Compression.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Compression.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Licensing/22.2.10": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.XlsIO.Net.Core/22.2.10": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "22.2.10",
+          "Syncfusion.Licensing": "22.2.10"
+        },
+        "compile": {
+          "lib/net6.0/Syncfusion.XlsIO.Portable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.XlsIO.Portable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3304,6 +3343,69 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Syncfusion.Compression.Net.Core/22.2.10": {
+      "sha512": "RTM3YVF91VoSl/78u2tH82ZZGZCJowtXeTMtfwUcoW8xnA8THxP+9TcxfXHG9LXdd2Nehax8NqDAQMYzsV7R3A==",
+      "type": "package",
+      "path": "syncfusion.compression.net.core/22.2.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net6.0/Syncfusion.Compression.Portable.dll",
+        "lib/net6.0/Syncfusion.Compression.Portable.xml",
+        "lib/net7.0/Syncfusion.Compression.Portable.dll",
+        "lib/net7.0/Syncfusion.Compression.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.Compression.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.Compression.Portable.xml",
+        "syncfusion.compression.net.core.22.2.10.nupkg.sha512",
+        "syncfusion.compression.net.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Licensing/22.2.10": {
+      "sha512": "rxpsnkM5IVodRlWTnmWxy8Mnt0I4HJyYvjAXhjV5C5VIlWWhPMPRlBHW9/bqZKrRsuPTd4BJcLOmY92I7+tClg==",
+      "type": "package",
+      "path": "syncfusion.licensing/22.2.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/net6.0/Syncfusion.Licensing.dll",
+        "lib/net7.0/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.22.2.10.nupkg.sha512",
+        "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.XlsIO.Net.Core/22.2.10": {
+      "sha512": "A63q5rCnHP+ebWe96gPwXDRM2mmPsKMQo5HS7Llk3ZdCYgxgVuAG6MQHTq8zdf11MgjEneTjclyQhP/18I4Q7g==",
+      "type": "package",
+      "path": "syncfusion.xlsio.net.core/22.2.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net6.0/Syncfusion.XlsIO.Portable.dll",
+        "lib/net6.0/Syncfusion.XlsIO.Portable.xml",
+        "lib/net7.0/Syncfusion.XlsIO.Portable.dll",
+        "lib/net7.0/Syncfusion.XlsIO.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.XlsIO.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.XlsIO.Portable.xml",
+        "syncfusion.xlsio.net.core.22.2.10.nupkg.sha512",
+        "syncfusion.xlsio.net.core.nuspec",
+        "syncfusion_logo.png"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -6809,6 +6911,7 @@
       "FluentNHibernate >= 3.2.1",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "NHibernate >= 5.4.5",
+      "Syncfusion.XlsIO.Net.Core >= 22.2.10",
       "System.Data.SqlClient >= 4.8.5"
     ]
   },
@@ -6870,6 +6973,10 @@
           "NHibernate": {
             "target": "Package",
             "version": "[5.4.5, )"
+          },
+          "Syncfusion.XlsIO.Net.Core": {
+            "target": "Package",
+            "version": "[22.2.10, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",

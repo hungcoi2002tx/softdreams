@@ -13,6 +13,7 @@
           "FluentNHibernate": "3.2.1",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "NHibernate": "5.4.5",
+          "Syncfusion.XlsIO.Net.Core": "22.2.10",
           "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
@@ -372,6 +373,34 @@
             "rid": "win-x86",
             "assetType": "native",
             "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "Syncfusion.Compression.Net.Core/22.2.10": {
+        "runtime": {
+          "lib/net6.0/Syncfusion.Compression.Portable.dll": {
+            "assemblyVersion": "22.2.10.0",
+            "fileVersion": "22.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Licensing/22.2.10": {
+        "runtime": {
+          "lib/net6.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "22.2.10.0",
+            "fileVersion": "22.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.XlsIO.Net.Core/22.2.10": {
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "22.2.10",
+          "Syncfusion.Licensing": "22.2.10"
+        },
+        "runtime": {
+          "lib/net6.0/Syncfusion.XlsIO.Portable.dll": {
+            "assemblyVersion": "22.2.10.0",
+            "fileVersion": "22.2.10.0"
           }
         }
       },
@@ -1421,6 +1450,27 @@
       "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "Syncfusion.Compression.Net.Core/22.2.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RTM3YVF91VoSl/78u2tH82ZZGZCJowtXeTMtfwUcoW8xnA8THxP+9TcxfXHG9LXdd2Nehax8NqDAQMYzsV7R3A==",
+      "path": "syncfusion.compression.net.core/22.2.10",
+      "hashPath": "syncfusion.compression.net.core.22.2.10.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/22.2.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rxpsnkM5IVodRlWTnmWxy8Mnt0I4HJyYvjAXhjV5C5VIlWWhPMPRlBHW9/bqZKrRsuPTd4BJcLOmY92I7+tClg==",
+      "path": "syncfusion.licensing/22.2.10",
+      "hashPath": "syncfusion.licensing.22.2.10.nupkg.sha512"
+    },
+    "Syncfusion.XlsIO.Net.Core/22.2.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A63q5rCnHP+ebWe96gPwXDRM2mmPsKMQo5HS7Llk3ZdCYgxgVuAG6MQHTq8zdf11MgjEneTjclyQhP/18I4Q7g==",
+      "path": "syncfusion.xlsio.net.core/22.2.10",
+      "hashPath": "syncfusion.xlsio.net.core.22.2.10.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",
