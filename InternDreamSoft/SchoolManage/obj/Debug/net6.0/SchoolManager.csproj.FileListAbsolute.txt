@@ -1,0 +1,15 @@
+E:\InternDreamSoft\SchoolManager\bin\Debug\net6.0\SchoolManager.exe
+E:\InternDreamSoft\SchoolManager\bin\Debug\net6.0\SchoolManager.deps.json
+E:\InternDreamSoft\SchoolManager\bin\Debug\net6.0\SchoolManager.runtimeconfig.json
+E:\InternDreamSoft\SchoolManager\bin\Debug\net6.0\SchoolManager.dll
+E:\InternDreamSoft\SchoolManager\bin\Debug\net6.0\SchoolManager.pdb
+E:\InternDreamSoft\SchoolManager\obj\Debug\net6.0\SchoolManager.csproj.AssemblyReference.cache
+E:\InternDreamSoft\SchoolManager\obj\Debug\net6.0\SchoolManager.GeneratedMSBuildEditorConfig.editorconfig
+E:\InternDreamSoft\SchoolManager\obj\Debug\net6.0\SchoolManager.AssemblyInfoInputs.cache
+E:\InternDreamSoft\SchoolManager\obj\Debug\net6.0\SchoolManager.AssemblyInfo.cs
+E:\InternDreamSoft\SchoolManager\obj\Debug\net6.0\SchoolManager.csproj.CoreCompileInputs.cache
+E:\InternDreamSoft\SchoolManager\obj\Debug\net6.0\SchoolManager.dll
+E:\InternDreamSoft\SchoolManager\obj\Debug\net6.0\refint\SchoolManager.dll
+E:\InternDreamSoft\SchoolManager\obj\Debug\net6.0\SchoolManager.pdb
+E:\InternDreamSoft\SchoolManager\obj\Debug\net6.0\SchoolManager.genruntimeconfig.cache
+E:\InternDreamSoft\SchoolManager\obj\Debug\net6.0\ref\SchoolManager.dll
