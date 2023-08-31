@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3bfo7XMDcYr6+Py44LoSjvu1cqG0KtNiMWB1HwE488E=",
+  "Hash": "VkamjV7EZV9MguWxwtNExCRLMtNXbDEngHK713TwzVU=",
   "Source": "BlazorFirstServerApp",
   "BasePath": "_content/BlazorFirstServerApp",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "BlazorFirstServerApp\\wwwroot",
       "Source": "BlazorFirstServerApp",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "Pattern": "**"
     }
@@ -6273,10 +6273,10 @@
       "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\antdesign\\0.15.4\\staticwebassets\\less\\upload\\style\\rtl.less"
     },
     {
-      "Identity": "E:\\InternDreamSoft\\BlazorFirstServerApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorFirstServerApp.styles.css",
+      "Identity": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorFirstServerApp.styles.css",
       "SourceId": "BlazorFirstServerApp",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "RelativePath": "BlazorFirstServerApp.styles.css",
       "AssetKind": "All",
@@ -6287,13 +6287,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\InternDreamSoft\\BlazorFirstServerApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorFirstServerApp.styles.css"
+      "OriginalItemSpec": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorFirstServerApp.styles.css"
     },
     {
-      "Identity": "E:\\InternDreamSoft\\BlazorFirstServerApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorFirstServerApp.bundle.scp.css",
+      "Identity": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorFirstServerApp.bundle.scp.css",
       "SourceId": "BlazorFirstServerApp",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "RelativePath": "BlazorFirstServerApp.bundle.scp.css",
       "AssetKind": "All",
@@ -6304,13 +6304,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\InternDreamSoft\\BlazorFirstServerApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorFirstServerApp.bundle.scp.css"
+      "OriginalItemSpec": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorFirstServerApp.bundle.scp.css"
     },
     {
-      "Identity": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "BlazorFirstServerApp",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -6324,10 +6324,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "BlazorFirstServerApp",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -6341,10 +6341,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "BlazorFirstServerApp",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -6358,10 +6358,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "BlazorFirstServerApp",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -6375,10 +6375,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "BlazorFirstServerApp",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -6392,10 +6392,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "BlazorFirstServerApp",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -6409,10 +6409,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "BlazorFirstServerApp",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -6426,10 +6426,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "BlazorFirstServerApp",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -6443,10 +6443,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "BlazorFirstServerApp",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -6460,10 +6460,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "BlazorFirstServerApp",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -6477,10 +6477,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "BlazorFirstServerApp",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -6494,10 +6494,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\site.css",
+      "Identity": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\css\\site.css",
       "SourceId": "BlazorFirstServerApp",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -6511,10 +6511,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\favicon.ico",
+      "Identity": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\favicon.ico",
       "SourceId": "BlazorFirstServerApp",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
+      "ContentRoot": "D:\\softdreams\\InternDreamSoft\\BlazorFirstServerApp\\wwwroot\\",
       "BasePath": "_content/BlazorFirstServerApp",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",

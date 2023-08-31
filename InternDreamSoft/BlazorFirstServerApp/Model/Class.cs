@@ -13,7 +13,6 @@ namespace BlazorFirstServerApp
         public virtual string SubjectName { get; set; }
 
         public virtual Teacher Teacher { get; set; }
-
         public virtual ICollection<Student> Students { get; set; }
 
         public override string? ToString()

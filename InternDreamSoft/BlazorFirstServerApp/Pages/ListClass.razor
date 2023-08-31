@@ -1,0 +1,53 @@
+﻿@page "/list-class"
+@using System.ComponentModel
+
+<Button Icon="plus" Type="primary" @onclick="_=>open()">New Class</Button>
+<Table DataSource="@listClass" Bordered=@true Title="@title" Footer="@footer" HidePagination="@true">
+    <PropertyColumn Property="c=>c.Name">
+    </PropertyColumn>
+    <PropertyColumn Property="c=>c.SubjectName"></PropertyColumn>
+    <ActionColumn Title="Action">
+        <Space Size=@("middle")>
+            <SpaceItem>
+
+                <Button OnClick="() => Delete(context)"><Icon Type="edit" Theme="outline" /></Button>
+            </SpaceItem>
+        </Space>
+    </ActionColumn>
+</Table>
+
+
+<Drawer Closable="true" Width="520" Visible="visible" Title='("Add new student")' OnClose="_=>close()">
+    <Template style="height:90%">
+        <EditForm @ref="editForm" OnValidSubmit="@Submit"
+                  OnInvalidSubmit="@SubmitFalse"
+                  Model="@classObject">
+            <DataAnnotationsValidator />
+            <div class="form-row">
+                <div class="col-md-12 mb-8">
+                    <div class="form-outline">
+                        <label class="form-label" for="name">Name</label>
+                        <InputText type="text" id="name" class="form-control" placeholder="Name"
+                                   @bind-Value="@classObject.Name" />
+                        <ValidationMessage For="@(() => classObject.Name)" />
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-12 mb-8">
+                    <div class="form-outline">
+                        <label class="form-label">SubjectName</label>
+                        <InputText type="text" id="address" class="form-control" placeholder="SubjectName"
+                                   @bind-Value="@classObject.SubjectName" />
+                        <ValidationMessage For="@(() => classObject.SubjectName)" />
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <Button HtmlType="submit">Submit</Button>
+            <Button Type="default" OnClick="_=>close()">Cancel</Button>
+        </EditForm>
+
+
+    </Template>
+</Drawer>

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option csharp_namespace = "BlazorFirstServerApp.Protos";
+
+service ClassProto{
+	rpc GetListClass(Empty) returns (ListClasses);
+	rpc AddClass(ClassGrpc) returns (Empty);
+	rpc DeleteClass(ClassGrpc) returns (Empty);
+}
+message Empty{
+
+}
+
+message ClassGrpc{
+	int32 id = 1;
+	string name = 2;
+	string subject = 3;
+	int32 teacherId = 4; 
+}
+
+message ListClasses{
+	repeated ClassGrpc list = 1;
+}

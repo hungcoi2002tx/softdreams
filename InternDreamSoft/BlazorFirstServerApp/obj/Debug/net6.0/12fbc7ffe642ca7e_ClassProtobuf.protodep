@@ -1,0 +1,2 @@
+obj\Debug\net6.0\Protos/ClassProtobuf.cs \
+obj\Debug\net6.0\Protos/ClassProtobufGrpc.cs: Protos/ClassProtobuf.proto

@@ -22,7 +22,7 @@ namespace BlazorFirstServerApp
             builder.Services.AddAntDesign();
             builder.Services.AddServerSideBlazor();
             builder.Services.AddSingleton<IExcelService, ExcelService>();
-            
+            builder.Services.AddSingleton<IClassService, ClassService>();
 
             var app = builder.Build();
 
