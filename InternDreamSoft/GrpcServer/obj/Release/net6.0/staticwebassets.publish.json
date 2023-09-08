@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "PEV5lTgJ1q40ZGE0Is99FxDz4PIbytk/gqtox3E53OM=",
+  "Source": "GrpcServer",
+  "BasePath": "_content/GrpcServer",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

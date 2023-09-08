@@ -4,6 +4,17 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": false,
+      "applicationUrl": "http://localhost:5162",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  },
+  "https": {
+    "GrpcServer": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
       "applicationUrl": "http://localhost:5162;https://localhost:7173",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

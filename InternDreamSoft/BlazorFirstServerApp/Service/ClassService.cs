@@ -16,12 +16,6 @@ namespace BlazorFirstServerApp.Service
             client.AddClass(classGrpc);
         }
 
-        public ClassProto.ClassProtoClient ClientService()
-        {
-            using var channel = GrpcChannel.ForAddress("https://localhost:5203");
-            return new ClassProto.ClassProtoClient(channel);
-        }
-
         public void Delete(Class _class)
         {
             ClassGrpc classGrpc = classMapper.ClassToClassGrpc(_class);
@@ -38,7 +32,8 @@ namespace BlazorFirstServerApp.Service
         {
             var httpHandler = new HttpClientHandler();
             httpHandler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
-            var channel = GrpcChannel.ForAddress("https://localhost:7173", new GrpcChannelOptions { HttpHandler = httpHandler });
+            var channel = GrpcChannel.ForAddress($"https://grpc-class-server.azurewebsites.net/", new GrpcChannelOptions { HttpHandler = httpHandler });
+            //var channel = GrpcChannel.ForAddress("https://localhost:7173", new GrpcChannelOptions { HttpHandler = httpHandler });
             return new ClassProto.ClassProtoClient(channel);
         }
 
