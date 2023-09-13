@@ -19,7 +19,7 @@ namespace GrpcServer
            _session = session;
         }
 
-        public void Add(Class _class)
+        public Boolean Add(Class _class)
         {
             _class.Id = GetNewClassID();
             using (var session = _session.OpenStatelessSession())
@@ -30,18 +30,19 @@ namespace GrpcServer
                     {
                         session.Insert(_class);
                         transaction.Commit();
+                        return true;
                     }
                     catch (Exception ex)
                     {
-
                         Console.WriteLine($"An error occurred: {ex.Message}");
                         transaction.Rollback();
+                        return false;
                     }
                 }
             }
         }
 
-        public void Delete(Class _class)
+        public Boolean Delete(Class _class)
         {
             using (var session = _session.OpenStatelessSession())
             {
@@ -51,12 +52,14 @@ namespace GrpcServer
                     {
                         session.Delete(_class);
                         transaction.Commit();
+                        return true;
                     }
                     catch (Exception ex)
                     {
 
                         Console.WriteLine($"An error occurred: {ex.Message}");
                         transaction.Rollback();
+                        return false;
                     }
                 }
             }

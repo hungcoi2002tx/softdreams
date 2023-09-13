@@ -3,6 +3,7 @@ using BlazorFirstServerApp.Model.DTO;
 using BlazorFirstServerApp.Model.NewFolder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
+using OneOf.Types;
 using System.Linq.Expressions;
 
 namespace BlazorFirstServerApp.Pages
@@ -33,15 +34,25 @@ namespace BlazorFirstServerApp.Pages
         //create new student
         private void Submit()
         {
+            bool result = false;    
             student = studentMapper.StudentDTOToStudent(studentDTO, isCreate);
             if(isCreate)
             {
-                studentRepository.AddNewStudent(student);
+                result = studentRepository.AddNewStudent(student);
+                
             }else if (!isCreate)
             {
-                studentRepository.UpdateStudentInformation(student);
+                result = studentRepository.UpdateStudentInformation(student);
             }
-            Success();
+            if (result)
+            {
+                Success();
+            }
+            else
+            {
+                Error();
+            }
+
             close();
         }
 

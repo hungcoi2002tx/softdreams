@@ -1,0 +1,12 @@
+D:\softdreams\InternDreamSoft\Share\bin\Debug\net6.0\Share.deps.json
+D:\softdreams\InternDreamSoft\Share\bin\Debug\net6.0\Share.dll
+D:\softdreams\InternDreamSoft\Share\bin\Debug\net6.0\Share.pdb
+D:\softdreams\InternDreamSoft\Share\obj\Debug\net6.0\Share.csproj.AssemblyReference.cache
+D:\softdreams\InternDreamSoft\Share\obj\Debug\net6.0\Share.GeneratedMSBuildEditorConfig.editorconfig
+D:\softdreams\InternDreamSoft\Share\obj\Debug\net6.0\Share.AssemblyInfoInputs.cache
+D:\softdreams\InternDreamSoft\Share\obj\Debug\net6.0\Share.AssemblyInfo.cs
+D:\softdreams\InternDreamSoft\Share\obj\Debug\net6.0\Share.csproj.CoreCompileInputs.cache
+D:\softdreams\InternDreamSoft\Share\obj\Debug\net6.0\Share.dll
+D:\softdreams\InternDreamSoft\Share\obj\Debug\net6.0\refint\Share.dll
+D:\softdreams\InternDreamSoft\Share\obj\Debug\net6.0\Share.pdb
+D:\softdreams\InternDreamSoft\Share\obj\Debug\net6.0\ref\Share.dll

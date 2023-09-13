@@ -1,10 +1,10 @@
-﻿using BlazorFirstServerApp.Protos;
-using Grpc.Core;
-using GrpcServer.Model.Mapper;
+﻿using GrpcServer.Model.Mapper;
+using ProtoBuf.Grpc;
+using Share;
 
 namespace GrpcServer.Service
 {
-    public class ClassService : BlazorFirstServerApp.Protos.ClassProto.ClassProtoBase
+    public class ClassService : ClassProto
     {
         private readonly ILogger<ClassService> logger;
         private readonly IClassRepository _classRepository;
@@ -16,34 +16,32 @@ namespace GrpcServer.Service
             _classRepository = classRepository;
         }
 
-
-        public override Task<BlazorFirstServerApp.Protos.ListClasses> GetListClass(BlazorFirstServerApp.Protos.Empty request, ServerCallContext context)
+        public ListClasses GetListClass(Empty request, CallContext context = default)
         {
-            BlazorFirstServerApp.Protos.ListClasses listClasses = new BlazorFirstServerApp.Protos.ListClasses();
+            ListClasses listClasses = new ListClasses();
             List<Class> classes = _classRepository.GetAllClass();
             foreach (var item in classes)
             {
                 ClassGrpc classGrpc = classMapper.ClassToClassGrpc(item);
                 listClasses.List.Add(classGrpc);
             }
-            return Task.FromResult(listClasses); 
+            return listClasses;
         }
 
-        public override Task<Empty> AddClass(ClassGrpc _classGrpc, ServerCallContext context)
+        public Empty AddClass(ClassGrpc request, CallContext context = default)
         {
-            Class _class = classMapper.ClassGrpcToClass(_classGrpc);
+            Class _class = classMapper.ClassGrpcToClass(request);
             _classRepository.Add(_class);
             Empty empty = new Empty();  
-            return Task.FromResult(empty);
+            return empty;
         }
 
-        public override Task<Empty> DeleteClass(ClassGrpc _classGrpc, ServerCallContext context)
+        public Empty DeleteClass(ClassGrpc request, CallContext context = default)
         {
-            Class _class = classMapper.ClassGrpcToClass(_classGrpc);
+            Class _class = classMapper.ClassGrpcToClass(request);
             _classRepository.Delete(_class);
             Empty empty = new Empty();
-            return Task.FromResult(empty);
+            return empty;
         }
-
     }
 }

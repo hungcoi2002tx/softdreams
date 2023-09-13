@@ -13,7 +13,7 @@
             public static ISessionFactory BuildSessionFactory() 
             {
                 var cfg = new Configuration();
-            string connectionString = "workstation id=schoolmanage.mssql.somee.com;packet size=4096;user id=hungdeptraifb;pwd=tiancutcho;data source=schoolmanage.mssql.somee.com;persist security info=False;initial catalog=schoolmanage";
+            string connectionString = "Data Source=DESKTOP-VM67PNO\\NGUYENMINHHUNG;Initial Catalog=SchoolManage;User ID=sa;Password=123";
 
             cfg.DataBaseIntegration(db =>
                 {

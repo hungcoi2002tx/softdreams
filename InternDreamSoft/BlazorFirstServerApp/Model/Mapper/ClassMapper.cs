@@ -1,6 +1,5 @@
-﻿
-using BlazorFirstServerApp.Model.DTO;
-using BlazorFirstServerApp.Protos;
+﻿using BlazorFirstServerApp.Model.DTO;
+using Share;
 
 namespace BlazorFirstServerApp.Model.Mapper
 {

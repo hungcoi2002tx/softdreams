@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorFirstServerApp", "Bla
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcServer", "..\GrpcServer\GrpcServer.csproj", "{181894E9-B2D1-4119-8D47-422866F29342}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Share", "..\Share\Share.csproj", "{5E58C320-B792-4046-B0D0-ADE3ADDB4521}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{181894E9-B2D1-4119-8D47-422866F29342}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{181894E9-B2D1-4119-8D47-422866F29342}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{181894E9-B2D1-4119-8D47-422866F29342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E58C320-B792-4046-B0D0-ADE3ADDB4521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E58C320-B792-4046-B0D0-ADE3ADDB4521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E58C320-B792-4046-B0D0-ADE3ADDB4521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E58C320-B792-4046-B0D0-ADE3ADDB4521}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

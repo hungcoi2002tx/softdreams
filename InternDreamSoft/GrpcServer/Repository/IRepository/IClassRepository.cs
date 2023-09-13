@@ -15,9 +15,9 @@ namespace GrpcServer
 
         public int GetNewClassID();
 
-        public void Add(Class _class);
+        public Boolean Add(Class _class);
         
-        public void Delete(Class _class);
+        public Boolean Delete(Class _class);
 
     }
 }

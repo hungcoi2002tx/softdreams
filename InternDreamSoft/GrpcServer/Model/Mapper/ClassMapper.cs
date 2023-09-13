@@ -1,5 +1,5 @@
 ﻿
-using BlazorFirstServerApp.Protos;
+using Share;
 
 namespace GrpcServer.Model.Mapper
 {

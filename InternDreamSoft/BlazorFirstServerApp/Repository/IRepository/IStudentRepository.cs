@@ -12,11 +12,11 @@ namespace BlazorFirstServerApp
     {
         public List<Student> GetAllStudents();
 
-        public void AddNewStudent(Student student);
+        public Boolean AddNewStudent(Student student);
 
-        public void UpdateStudentInformation( Student studentUpdate);
+        public Boolean UpdateStudentInformation( Student studentUpdate);
 
-        public void DeleteStudent(Student student);
+        public Boolean DeleteStudent(Student student);
 
         public List<Student> SortData();
 

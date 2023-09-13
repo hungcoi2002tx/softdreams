@@ -36,7 +36,7 @@ namespace BlazorFirstServerApp
             
         }
 
-        public void AddNewStudent(Student student)
+        public Boolean AddNewStudent(Student student)
         {
             student.Id = GetIDNewStudent();
             using (var session = _session.OpenStatelessSession())
@@ -47,12 +47,14 @@ namespace BlazorFirstServerApp
                     {                       
                         session.Insert(student);
                         transaction.Commit();
+                        return true;
                     }
                     catch (Exception ex)
                     {
                         
                         Console.WriteLine($"An error occurred: {ex.Message}");
                         transaction.Rollback();
+                        return false;
                     }
                 }
             }
@@ -64,7 +66,7 @@ namespace BlazorFirstServerApp
             return student.Id + 1;
         }
 
-        public void UpdateStudentInformation(Student student)
+        public Boolean UpdateStudentInformation(Student student)
         {
             using (var session = _session.OpenSession())
             {
@@ -74,18 +76,20 @@ namespace BlazorFirstServerApp
                     {  
                         session.Update(student);
                         transaction.Commit();
+                        return true;
                     }
                     catch (Exception ex)
                     {
                         
                         Console.WriteLine($"An error occurred: {ex.Message}");
                         transaction.Rollback();
+                        return false;
                     }
                 }
             }
         }
 
-        public void DeleteStudent(Student student)
+        public Boolean DeleteStudent(Student student)
         {
             using (var session = _session.OpenSession())
             {
@@ -97,12 +101,14 @@ namespace BlazorFirstServerApp
                         session.Delete(student);
 
                         transaction.Commit();
+                        return true;
                     }
                     catch (Exception ex)
                     {
                         
                         Console.WriteLine($"An error occurred: {ex.Message}");
                         transaction.Rollback();
+                        return false;
                     }
                 }
             }

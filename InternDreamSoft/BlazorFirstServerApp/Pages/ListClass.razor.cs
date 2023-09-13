@@ -3,7 +3,6 @@ using BlazorFirstServerApp.Model.Mapper;
 using BlazorFirstServerApp.Service.IStudent;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
-using System.ComponentModel;
 
 namespace BlazorFirstServerApp.Pages
 {
@@ -35,6 +34,11 @@ namespace BlazorFirstServerApp.Pages
         {
             listClass = classService.GetListClass();
             classObject = new ClassDTO();
+            Change();
+        }
+
+        private void Change()
+        {
             StateHasChanged();
         }
         public void open()
@@ -53,8 +57,8 @@ namespace BlazorFirstServerApp.Pages
         private void Submit()
         {           
             classService.Add(classMapper.ClassDTOToClass(classObject));
+            close();
             Loading();
-            close();   
         }
     }
 }

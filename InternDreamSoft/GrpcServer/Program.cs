@@ -1,5 +1,5 @@
 ﻿using GrpcServer.Service;
-using GrpcServer.Services;
+using ProtoBuf.Grpc.Server;
 using System.Net;
 
 namespace GrpcServer
@@ -21,12 +21,11 @@ namespace GrpcServer
             builder.Services.AddSingleton<NHibernate.ISessionFactory>(NHibernateConfig.BuildSessionFactory());
             builder.Services.AddSingleton<IClassRepository, ClassRepository>();
             // Add services to the container.
-            builder.Services.AddGrpc();
+            builder.Services.AddCodeFirstGrpc();
 
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
-            app.MapGrpcService<GreeterService>();
             app.MapGrpcService<ClassService>();
            
             app.MapGet("/", () => "ĐÂY LÀ GRPC SERVICE XIN VUI LÒNG KHÔNG TRUY CẬP TRỰC TIẾP abc");
